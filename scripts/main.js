@@ -46,7 +46,8 @@ const buttonFilter = (event) => {
     renderCards(books)
   }
   if(event.target.id.includes('clearFilter')) {
-    console.log('clearFilter')
+    const clear = (item => item.id == true)
+    renderCards(clear)
   }
   if(event.target.id.includes('productList')) {
     let table = `<table class="table table-dark table-striped" style="width: 600px">
